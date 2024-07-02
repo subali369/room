@@ -1,0 +1,66 @@
+<!--Font Awesome CDN-->
+<link rel="stylesheet" href="tf.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<div class="container">
+    <div class="title">
+        <h4>Select a <span style="color: #6064b6">Payment</span> method</h4>
+    </div>
+
+    <form action="#">
+        <input type="radio" name="payment" id="visa">
+        <input type="radio" name="payment" id="mastercard">
+        <input type="radio" name="payment" id="paypal">
+        <input type="radio" name="payment" id="AMEX">
+
+
+        <div class="category">
+            <label for="visa" class="visaMethod">
+                <div class="imgName">
+                    <div class="imgContainer visa">
+                        <img src="martercard.png" alt="">
+                    </div>
+                    <span class="name">mastercard</span>
+                </div>
+                <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+            </label>
+
+            <label for="mastercard" class="mastercardMethod">
+                <div class="imgName">
+                    <div class="imgContainer mastercard">
+                        <img src="dana.png" alt="">
+                    </div>
+                    <a href="https://link.dana.id/qr/3sjmed43s">
+                    <span class="name">Dana</span>
+                    </a>
+                </div>
+                <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+            </label>
+
+            <label for="paypal" class="paypalMethod">
+                <div class="imgName">
+                    <div class="imgContainer paypal">
+                        <img src="shopeepay.png" alt="">
+                    </div>
+                    <a href="https://shopeepay.co.id/">
+                    <span class="name">Shoppey pay</span>
+                    </a>
+                </div>
+                <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+            </label>
+
+            <label for="AMEX" class="amexMethod">
+                <div class="imgName">
+                    <div class="imgContainer AMEX">
+                        <a href="https://www.ovo.id/">
+                        <img src="ovo.png" alt="">
+                        </a>
+                    </div>
+                    <span class="name">ovo</span>
+                </div>
+                <span class="check"><i class="fa-solid fa-circle-check" style="color: #6064b6;"></i></span>
+            </label>
+        </div>
+    </form>
+</div>

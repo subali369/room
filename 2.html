@@ -1,0 +1,311 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TemanK3">
+    <meta name="author" content="MBT Solution">
+    <meta name="generator" content="Sancode">
+      <title>Room</title>
+      
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="https://temank3.kemnaker.go.id/public/images/logo-kemnaker.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="https://temank3.kemnaker.go.id/public/themes/website/asset/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://temank3.kemnaker.go.id/public/themes/website/asset/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://temank3.kemnaker.go.id/public/themes/website/asset/favicons/favicon-16x16.png">
+        <link rel="mask-icon" href="https://temank3.kemnaker.go.id/public/themes/website/asset/favicons/safari-pinned-tab.svg" color="#2b5797">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap core CSS -->
+<link href="https://temank3.kemnaker.go.id/public/themes/website/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQuery -->
+<script src="https://temank3.kemnaker.go.id/public/themes/adminlte/plugins/jquery/jquery.min.js"></script>
+ <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="https://temank3.kemnaker.go.id/public/themes/adminlte/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      .page-item.active .page-link {
+            background-color: #15406a!important;
+            border-color: #15406a!important;
+        }
+        .page-link {
+            color: #15406a!important;
+        }
+        li.page-item.active > a {
+            color: #fff!important;
+        }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <style>
+.logo,
+.navbar-brand {
+  width: 170px !important;
+  height: 58px; 
+margin-bottom: 6px;
+}
+  
+.logo2,
+.navbar-brand {
+  width: 100px !important;
+  height: 53px; }
+.logo img,
+.navbar-brand img {
+  -o-object-position: left;
+     object-position: left; }
+	 .banner-description {
+    color: #fff;
+   
+	   text-align: center;
+
+}
+	 </style>
+    <!-- Custom styles for this template -->
+    <link href="https://temank3.kemnaker.go.id/public/themes/website/css/carousel.css" rel="stylesheet">
+     <link href="https://temank3.kemnaker.go.id/public/themes/website/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+<div id="temank3">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container">
+     
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+                        <a class="nav-link active" href="https://temank3.kemnaker.go.id"> <i class="fa fa-home"></i> BERANDA
+                          </a>
+                            </li>
+                            
+                         <li class="nav-item">
+                        <a class="nav-link" href="https://temank3.kemnaker.go.id/page/flowchart"> <i class="fa fa-flag"></i> FLOW CHART
+                          </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa fa-th"></i> LAYANAN</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="https://temank3.kemnaker.go.id/portal">Pengesahan Gambar Rencana (PGR)</a></li>
+                              <li><a class="dropdown-item" href="https://temank3.kemnaker.go.id/portal">Penyelidikan Bahan (PB)</a></li>
+     						 <li><a class="dropdown-item" href="https://temank3.kemnaker.go.id/portal">Surat Keterangan K3 </a></li>
+                              <li><a class="dropdown-item" href="https://temank3.kemnaker.go.id/p2hiv" target="_blank">E-Learning P2HIV</a></li>
+                              <li><a class="dropdown-item" href="https://temank3.kemnaker.go.id/p2hiv" target="_blank">AIDS AWARD</a></li>
+                            </ul>
+                          </li>
+        
+                            <li class="nav-item">
+                        <a class="nav-link" href="https://temank3.kemnaker.go.id/page/news"> <i class="fa fa-newspaper"></i> INFO & ARTIKEL
+                          </a>
+                            </li>
+                            
+                            <li class="nav-item">
+                        <a class="nav-link" href="https://temank3.kemnaker.go.id/page/perundangan"> <i class="fa fa-book"></i> DOKUMEN K3 
+                          </a>
+                            </li>
+                            <li class="nav-item">
+                        <a class="nav-link" href="https://temank3.kemnaker.go.id/page/kontak"> <i class="fa fa-user"></i> HUBUNGI KAMI
+                          </a>
+                            </li>
+                            
+                    <li>
+                        <a  class="nav-link" href="https://temank3.kemnaker.go.id/login"> <i class="fa fa-sign-in"></i> LOGIN
+                          </a>
+                            </li>
+                            
+        
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main><style>
+    .new-support-section h3 {
+    font: 600 22px "Raleway", sans-serif;
+    color: #121620;
+    text-transform: capitalize;
+    margin-top: 10;
+    margin-bottom: 5px; }
+    
+  .new-support-section .box {
+               
+     background: rgba(251,255,255);
+    border-radius: 10px;
+     margin-top: 10px;
+      margin-bottom: 10px;
+    padding: 30px 10px;
+    border: 1px solid #888888;
+     }
+    
+    
+  .new-support-section p {
+    font: 600 14px "Open Sans", sans-serif;
+    color: #000;
+    line-height: 1.8; }
+   
+.box {
+   
+    background: rgba(205,223,222);
+    border-radius: 10px;
+    padding: 30px 10px;
+}
+
+.box.atas > h4 {
+    height: 45px;
+}
+
+.box > h4 {
+    height: 60px;
+}
+.box > p {
+    height: 40px;
+}
+a.btn.btn-sm.btn-primary.rounded {
+    /*padding: 10px;*/
+    /*text-transform: uppercase;*/
+    /*width: 100%;*/
+    /*font-weight: 800;*/
+    background: #15406a;
+    border: #15406a;
+} 
+  
+</style>
+	<!-- jQuery -->
+<script src="https://temank3.kemnaker.go.id/public/themes/website/assets/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="https://temank3.kemnaker.go.id/public/themes/website/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <script type="text/javascript" src="https://temank3.kemnaker.go.id/public/themes/website/assets/scripts/jquery.captcha.basic.min.js"></script>
+  
+    
+  <div class="new-support-section mt-0">
+
+   
+    <div class="container">
+        <div class="row">
+         
+             <div class="col-xs-6 col-sm-4 col-md-6 col-lg-6 ">
+          <a href="PUBLIC_CHAT_ROOM_IN_PHP_WITH_SOURCE_CODE/Public ChatRoom PHP/chat/login.php">
+            
+                <div class="box">
+                    <i class="fa fa-users pt-4"></i>
+                    <p class="font-weight-bold">Roomnitas </p>
+                </div>
+              </a>
+        </div>
+        
+         
+        <div class="col-xs-6 col-sm-4 col-md-6 col-lg-6 ">
+          <a href="php-chat-app-main/home.php">
+               
+                <div class="box">
+                     <i class="fa fa-user pt-4"></i>
+                    <p class="font-weight-bold"> tanya mentor  </p>
+                  
+                </div>
+              </a>
+        </div>
+        
+         
+
+        </div>
+        
+            <a href="https://temank3.kemnaker.go.id" class="btn btn-primary btn-xs btn-update btn-add-card">Home</a><br>
+     
+      
+    </div>
+</div>
+    
+
+  <!-- FOOTER -->
+
+<!--footer-->
+<footer id="footer-two">
+    
+<div class="container">
+    <center>
+               
+                    <!--<img class="img-responsive" src="https://temank3.id/asset/img/logo.png" alt="footer-logo">-->
+                    
+                <br>
+                
+</center>
+<!--<div class="container">-->
+<!--    <div class="row">-->
+   
+      
+<!-- <center>-->
+<!--             <ul class="list-group list-group-horizontal">-->
+<!--                <li class="list-group-item">-->
+<!--                        <a href="#"><i class="fab fa-facebook-square"></i></a>-->
+<!--                    </li>-->
+
+<!--                    <li class="list-group-item">-->
+<!--                        <a href="#"><i class="fab fa-skype"></i></a>-->
+<!--                    </li>-->
+
+<!--                    <li class="list-group-item">-->
+<!--                        <a href="#"><i class="fab fa-linkedin"></i></a>-->
+<!--                    </li>-->
+
+<!--                    <li class="list-group-item">-->
+<!--                        <a href="#"><i class="fab fa-google-plus"></i></a>-->
+<!--                    </li>-->
+<!--                    <li class="list-group-item">-->
+<!--                        <a href="#"><i class="fab fa-twitter"></i></a>-->
+<!--                    </li>-->
+                  
+                   
+<!--        </ul>-->
+<!--        </center>-->
+      
+<!--    </div>-->
+<!-- </div>-->
+              
+              <br>
+                <center><div id="histats_counter" ></div></center><br>
+
+
+</div>
+
+    
+    <p class="copyright-text"> &copy; <script> document.write(new Date().getFullYear()) </script>  
+    
+  
+
+</footer>
+<!--end footer-->
+</main>
+</div>
+
+
+    <script src="https://temank3.kemnaker.go.id/public/themes/website/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+  <link rel="stylesheet" href="https://temank3.kemnaker.go.id/public/themes/adminlte/plugins/select2/js/select2.min.js">
+<!-- SweetAlert2 -->
+<script src="https://temank3.kemnaker.go.id/public/themes/adminlte/plugins/sweetalert2/sweetalert2.min.js"></script>
+         
+         
+
+
+
+
+  </body>
+</html>

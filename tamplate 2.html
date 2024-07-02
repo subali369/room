@@ -1,0 +1,770 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TemanK3">
+    <meta name="author" content="MBT Solution">
+    <meta name="generator" content="Sancode">
+      <title>Room</title>
+      
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    
+        <link rel="apple-touch-icon" sizes="180x180" href="https://temank3.kemnaker.go.id/public/themes/website/asset/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://temank3.kemnaker.go.id/public/themes/website/asset/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://temank3.kemnaker.go.id/public/themes/website/asset/favicons/favicon-16x16.png">
+        <link rel="mask-icon" href="https://temank3.kemnaker.go.id/public/themes/website/asset/favicons/safari-pinned-tab.svg" color="#2b5797">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap core CSS -->
+<link href="https://temank3.kemnaker.go.id/public/themes/website/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQuery -->
+<script src="https://temank3.kemnaker.go.id/public/themes/adminlte/plugins/jquery/jquery.min.js"></script>
+ <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="https://temank3.kemnaker.go.id/public/themes/adminlte/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      .page-item.active .page-link {
+            background-color: #15406a!important;
+            border-color: #15406a!important;
+        }
+        .page-link {
+            color: #15406a!important;
+        }
+        li.page-item.active > a {
+            color: #fff!important;
+        }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <style>
+.logo,
+.navbar-brand {
+  width: 170px !important;
+  height: 58px; 
+margin-bottom: 6px;
+}
+  
+.logo2,
+.navbar-brand {
+  width: 100px !important;
+  height: 53px; }
+.logo img,
+.navbar-brand img {
+  -o-object-position: left;
+     object-position: left; }
+	 .banner-description {
+    color: #fff;
+   
+	   text-align: center;
+
+}
+	 </style>
+    <!-- Custom styles for this template -->
+    <link href="https://temank3.kemnaker.go.id/public/themes/website/css/carousel.css" rel="stylesheet">
+     <link href="https://temank3.kemnaker.go.id/public/themes/website/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+<div id="temank3">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container">
+     
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+                        <a class="nav-link active" href="https://temank3.kemnaker.go.id"> <i class="fa fa-home"></i> BERANDA
+                          </a>
+                            </li>
+                            
+                         <li class="nav-item">
+                        <a class="nav-link" href="https://temank3.kemnaker.go.id/page/flowchart"> <i class="fa fa-flag"></i> FLOW CHART
+                          </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa fa-th"></i> LAYANAN</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="https://temank3.kemnaker.go.id/portal">Pengesahan Gambar Rencana (PGR)</a></li>
+                              <li><a class="dropdown-item" href="https://temank3.kemnaker.go.id/portal">Penyelidikan Bahan (PB)</a></li>
+     						 <li><a class="dropdown-item" href="https://temank3.kemnaker.go.id/portal">Surat Keterangan K3 </a></li>
+                              <li><a class="dropdown-item" href="https://temank3.kemnaker.go.id/p2hiv" target="_blank">E-Learning P2HIV</a></li>
+                              <li><a class="dropdown-item" href="https://temank3.kemnaker.go.id/p2hiv" target="_blank">AIDS AWARD</a></li>
+                            </ul>
+                          </li>
+        
+                            <li class="nav-item">
+                        <a class="nav-link" href="https://temank3.kemnaker.go.id/page/news"> <i class="fa fa-newspaper"></i> INFO & ARTIKEL
+                          </a>
+                            </li>
+                            
+                            <li class="nav-item">
+                        <a class="nav-link" href="https://temank3.kemnaker.go.id/page/perundangan"> <i class="fa fa-book"></i> DOKUMEN K3 
+                          </a>
+                            </li>
+                            <li class="nav-item">
+                        <a class="nav-link" href="https://temank3.kemnaker.go.id/page/kontak"> <i class="fa fa-user"></i> HUBUNGI KAMI
+                          </a>
+                            </li>
+                            
+                    <li>
+                        <a  class="nav-link" href="https://temank3.kemnaker.go.id/login"> <i class="fa fa-sign-in"></i> LOGIN
+                          </a>
+                            </li>
+                            
+        
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main><style>
+body {
+    overflow-x: hidden;
+}
+img {
+  height: 350px; 
+  object-fit: cover;
+}
+.bg-top{
+    background: url(public/images/slider_bg.png) 100% 0 ;
+      background-attachment: fixed;
+}
+.bg-kanan{
+    background: url(public/themes/website/asset/img/bghome.jpg) center/cover no-repeat;
+    
+  background-attachment: fixed;
+  
+}
+.carousel-caption {
+    bottom: 0;
+    top: auto;
+    font-weight: 600;
+    font-size: 45px;
+}
+a{text-decoration:none;color:black;}
+   .text_box_three {
+		position: absolute;
+		top: 40px;
+		z-index: 2;
+		/*color: #fff;*/
+		 text-align: center;
+		 display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  
+	}
+	 .text_box_three h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    margin: 0;
+    /*color: #160c31;*/
+    text-transform: uppercase;
+    text-align: center; }
+    
+
+.soft_slider_wrapper .carousel-inner .carousel-item .caption-1,
+.soft_slider_wrapper .carousel-inner .carousel-item .caption-2,
+.soft_slider_wrapper .carousel-inner .carousel-item .caption-3 {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	min-height: 820px;
+	
+}
+.soft_slider_wrapper .carousel-inner  {
+	display: block;
+	position: relative;
+
+}
+
+.soft_slider_wrapper .carousel-inner .carousel-item .carousel-captions .content {
+	display: block;
+	position: relative;
+	z-index: 999;
+	overflow: hidden;
+	vertical-align: middle;
+	padding-top: 250px;
+	padding-bottom: 150px;
+}
+.soft_slider_wrapper .carousel-inner .carousel-item .carousel-bungkus:after{
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+   
+    z-index: 1;
+   background: rgba(0,0,0,0.4);
+    transform-origin: bottom left;
+   
+}
+
+.soft_slider_main_img_wrapper img {
+	width: 100%;
+
+	
+}
+
+.box {
+    background: rgba(205,223,222);
+    border-radius: 10px;
+    padding: 30px 10px;
+}
+
+.box.atas > h4 {
+    height: 45px;
+}
+
+.box > h4 {
+    height: 70px;
+}
+.box > p {
+    height: 70px;
+}
+a.btn.btn-sm.btn-primary.rounded {
+    /*padding: 10px;*/
+    /*text-transform: uppercase;*/
+    /*width: 100%;*/
+    /*font-weight: 800;*/
+    background: #15406a;
+    border: #15406a;
+}
+.card.soft_slider_main_img_wrapper.carousel-bungkus.animated.fadeInLeft {
+    background: transparent!important;
+    border-radius: 20px!important;
+}
+.new-support-section .triangle-left {
+  border-top: 100px solid transparent;
+  border-right: 240px solid transparent;
+}
+.caraousel-control:hover {
+    opacity: 100;
+    right: -30px;
+}
+
+.caraousel-control{
+    width: 100%;
+}
+.carousel-control-next:focus, .carousel-control-next:hover  {
+    opacity: 100;
+    right: -30px;
+}
+
+.carousel-control-next {
+    right: -10px;
+    height: 350px;
+    opacity: 0.3;
+    transition: ease .4s all;
+    --webkit-transition: ease .4s all;
+    --moz-transition: ease .4s all;
+}
+
+.carousel-control-prev:focus, .carousel-control-prev:hover {
+    opacity: 100;
+    left: -30px;
+}
+
+
+.carousel-control-prev {
+    left: -10px;
+    height: 350px;
+    opacity: 0.3;
+    transition: ease .4s all;
+    --webkit-transition: ease .4s all;
+    --moz-transition: ease .4s all;
+}
+.text-white.rounded-4.overflow-hidden {
+  border-radius: 5px;
+  overflow: hidden !important;
+  border: 5px;
+}
+.rounded-86 {
+    border-radius: 5px;
+  overflow: hidden !important;
+  border: 5px;
+}
+.soft_slider_wrapper .carousel-inner .carousel-item .carousel-bungkus::after {
+    background: transparent!important;
+}
+
+.box:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    /*background-image: url('https://i.pinimg.com/originals/9d/a7/aa/9da7aaf50833e6a0580c7ebea92f4a06.png');*/
+    background-image: url('public/images/modern_bg.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    border-radius: 20px!important;
+    background-attachment: fixed;
+}
+.box {
+    position: relative;
+    border-radius: 20px!important;
+    z-index: 10000;
+}
+
+a.btn.btn-sm.btn-primary.rounded {
+    position: relative;
+    z-index: 10000;
+}
+.new-support-section .triangle-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* border-bottom: 168px solid #15406a; */
+    /* border-left: 286px solid transparent; */
+    border: 200px solid #15406a;
+    border-top-left-radius: 100%;
+    bottom: -100px;
+    z-index: 9999;
+}
+.triangle-right:before {
+    content: " ";
+    display: block;
+    width: 525px;
+    height: 286px;
+    overflow: hidden;
+    border: 20px solid #f2f2f2;
+    background: #f2f2f2;
+    position: absolute;
+    right: -119px;
+    top: -184px;
+    border-radius: 100%;
+    z-index: 99;
+}
+.fixed-top {
+    z-index: 10001!important;
+}
+
+.soft_slider_wrapper {
+      height: 300px;
+  }
+
+.modal {
+	z-index: 10600;
+}
+
+@media only screen and (max-width: 1366px) {
+  .carousel-control-prev {
+      height: 230px;
+  }
+  .carousel-control-next {
+      height: 230px;
+  }
+  .soft_slider_wrapper {
+      height: 250px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .carousel-control-prev {
+      display:none;
+  }
+  .carousel-control-next {
+      display:none;
+  }
+  .soft_slider_wrapper {
+      height: 70px;
+  }
+}
+
+@media only screen and (min-width: 650px and max-width: 800px) {
+  .carousel-control-prev {
+      display:none;
+  }
+  .carousel-control-next {
+      display:none;
+  }
+  .soft_slider_wrapper {
+      height: 150px;
+  }
+}
+
+</style>
+ 
+ <link rel="stylesheet" href="https://temank3.kemnaker.go.id///public/vendors/animate.min.css" />
+ 
+     
+  <!-- slider wrapper start-->
+    
+          <div class="row mt-4 bg-kanan">
+              <div class="col-md-12 mt-2"> 
+              <center> <h3 class="animate-reveal">
+             
+                  </center>
+                  </div>
+                  </div>
+              
+       <div class="row bg-kanan">
+           
+               <div class="col-md-12 col-sm-12">
+                   
+                   <section class="pt-2 pb-2 soft_slider_wrapper">
+                       
+                    
+    <div class="container-fluid px-5">
+        <div class="row rounded-86">
+          
+            <div class="col-12 rounded-86">
+             
+ <div id="carouselExampleIndicators2" class="carousel slide rounded-86" data-bs-ride="carousel" data-bs-interval="3000">
+   
+        <div class="carousel-inner rounded-86">
+                        
+                                <div class="carousel-item bg-transparent rounded-86 active">
+                            <!--<div class="row">-->
+                            <!--    <div class="col-md-12 mb-3">-->
+                                    <div class="card bg-transparent soft_slider_main_img_wrapper carousel-bungkus animated fadeInLeft rounded-86">
+                                        <!--<a class="text-white rounded-4 overflow-hidden" href="">-->
+                                        <a class="text-white rounded-4 overflow-hidden" href="#">
+                                            <img class="img-fluid" alt="Bulan K3 2024" src="https://temank3.kemnaker.go.id/public/uploads/slider/TemanK3_Banner_BulanK3(2).png">
+                                       
+                                          <a class="text-white" href="">
+                                               <div class="bg-dark w-100 p-3 text-center fw-bold d-none">
+                                                    <p class="card-text">Menaker Canangkan Bulan K3 Nasional 2024 di Smelter Freeport Gresik</p>
+                                                </div>
+                                        </a>
+                                            
+
+                                <!--    </div>-->
+                                <!--</div>-->
+
+                            </div>
+                        </div>
+                                          <div class="carousel-item bg-transparent rounded-86 ">
+                            <!--<div class="row">-->
+                            <!--    <div class="col-md-12 mb-3">-->
+                                    <div class="card bg-transparent soft_slider_main_img_wrapper carousel-bungkus animated fadeInLeft rounded-86">
+                                        <!--<a class="text-white rounded-4 overflow-hidden" href="">-->
+                                        <a class="text-white rounded-4 overflow-hidden" href="#">
+                                            <img class="img-fluid" alt="Download Aplikasi Teman K3" src="https://temank3.kemnaker.go.id/public/uploads/slider/temank3apps.jpeg">
+                                       
+                                          <a class="text-white" href="">
+                                               <div class="bg-dark w-100 p-3 text-center fw-bold d-none">
+                                                    <p class="card-text">Download Aplikasi Teman K3</p>
+                                                </div>
+                                        </a>
+                                            
+
+                                <!--    </div>-->
+                                <!--</div>-->
+
+                            </div>
+                        </div>
+                                          <div class="carousel-item bg-transparent rounded-86 ">
+                            <!--<div class="row">-->
+                            <!--    <div class="col-md-12 mb-3">-->
+                                    <div class="card bg-transparent soft_slider_main_img_wrapper carousel-bungkus animated fadeInLeft rounded-86">
+                                        <!--<a class="text-white rounded-4 overflow-hidden" href="">-->
+                                        <a class="text-white rounded-4 overflow-hidden" href="#">
+                                            <img class="img-fluid" alt="76 Tahun Kemnaker Mengabdi" src="https://temank3.kemnaker.go.id/public/uploads/slider/76-kemnaker-v2.jpg">
+                                       
+                                          <a class="text-white" href="">
+                                               <div class="bg-dark w-100 p-3 text-center fw-bold d-none">
+                                                    <p class="card-text">76 Tahun Kemnaker Mengabdi</p>
+                                                </div>
+                                        </a>
+                                            
+
+                                <!--    </div>-->
+                                <!--</div>-->
+
+                            </div>
+                        </div>
+                        
+                             
+                    </div>
+                  
+                
+                        <a class="carousel-control-prev" data-bs-target="#carouselExampleIndicators2" role="button" data-bs-slide="prev">                        
+                            <span class="bg-secondary rounded-pill fs-3 px-3 py-1"><i class="fas fa-chevron-left"></i></span>
+                        </a>
+                        <a class="carousel-control-next" data-bs-target="#carouselExampleIndicators2" role="button" data-bs-slide="next">                        
+                            <span class="bg-secondary rounded-pill fs-3 px-3 py-1"><i class="fas fa-chevron-right"></i></span>
+                        </a>
+                </div>
+                
+               
+            </div>
+              
+        </div>
+        
+    </div>
+</section>
+              </div>     
+
+                      <div class="col-md-6 col-sm-6" data-wow-delay="0.3s">
+                          
+                          
+                          
+                          <div class="row">
+  <div class="col-sm-5">
+   
+  </div>
+  <div class="col-sm-7">
+    <div class="cardx">
+      <div class="card-body">
+
+       <!--  <img class="img-fluid" alt="Responsive image"
+                  
+                  <img src="https://temank3.kemnaker.go.id//public/themes/website/asset/img/hutri77.png" > -->
+         
+                       
+                </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+                          
+                          
+        
+        </div>
+       </div>
+          
+ 
+
+  
+  <div class="new-support-section mt-0">
+
+    <div class="triangle-left"></div>
+    <div class="triangle-right d-none"></div>
+     <div class="container-fluid px-5 mb-5">
+    
+      <div class="row g-3">
+            <div class="col-md-3 col-sm-6  wow zoomIn" data-wow-delay="0.3s">
+                <div class="box atas">
+                    <a href="https://temank3.kemnaker.go.id//page/sub_bidang"><i class="fa fa-suitcase"></i></a>
+                    <h4 class="mb-3"> sertiif
+</h3>
+                    <p> klaim kan hasil kegiatan mu di sini
+</p>
+                      <a class="btn btn-sm btn-primary rounded" href="1.html">Kunjungi Layanan </a>  
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6  wow zoomIn" data-wow-delay="0.3s">
+                <div class="box atas">
+                    <a href="https://temank3.kemnaker.go.id/page/sub_lembaga_audit"><i class="fa fa-university"></i></a>
+                    <h4 class="mb-3">e-SMK3
+</h3>
+                    <p>Layanan Audit dan Informasi SMK3
+</p>
+                    <a class="btn btn-sm btn-primary rounded" href="2.html">Kunjungi Layanan</a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6  wow zoomIn" data-wow-delay="0.3s">
+                <div class="box atas">
+                   <a href="https://temank3.kemnaker.go.id/page/personel">  <i class="fa fa-users"></i></a>
+                    <h4 class="mb-3">e-PERSONEL K3</h3>
+                    <p>Layanan Informasi Operator/Juru K3, Teknisi K3, Dokter Perusahaan, Paramedis, Ahli K3</p>
+                    <a class="btn btn-sm btn-primary rounded" href="https://temank3.kemnaker.go.id/page/personel">Kunjungi Layanan</a>
+                </div>
+            </div>
+             <div class="col-md-3 col-sm-6  wow zoomIn" data-wow-delay="0.3s">
+                <div class="box atas">
+                   <a href="https://temank3.kemnaker.go.id/page/sub_class"> <i class="fa fa-desktop"></i></a>
+                    <h4 class="mb-3">KELAS VIRTUAL </h3>
+                    <p>Ujian Pembinaan K3 dan e-Learning P2HIV
+</p>
+                    <a class="btn btn-sm btn-primary rounded" href="https://temank3.kemnaker.go.id/page/sub_class">Kunjungi Layanan</a>
+                </div>
+            </div>
+       
+           
+        </div>
+        <div class="row g-3 mt-0">
+            <div class="col-md-3 col-sm-6  wow zoomIn" data-wow-delay="0.3s">
+                <div class="box">
+                   <a href="#"> <i class="fa fa-male"></i></a>
+                    <h4 class="mb-3">PENGAWAS KETENAGAKERJAAN SPESIALIS K3
+</h3>
+                    <p>Data Pengawas Ketenagakerjaan Spesialis K3 sesuai dengan bidangnya</p>
+                      <a class="btn btn-sm btn-primary rounded" href="#">Kunjungi Layanan</a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6  wow zoomIn" data-wow-delay="0.3s">
+                <div class="box">
+                    <a href="#"><i class="fa fa-key"></i></a>
+                    <h4 class="mb-3">e-DATA OBJEK K3 
+ </h3>
+                    <p>Data Objek K3 </p>
+                    <a class="btn btn-sm btn-primary rounded" href="#">Kunjungi Layanan</a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6  wow zoomIn" data-wow-delay="0.3s">
+                <div class="box">
+                    <a href="https://temank3.kemnaker.go.id/page/sub_pemeriksaan"><i class="fa fa-cog"></i></a>
+                    <h4 class="mb-3">e-PEMERIKSAAN DAN PENGUJIAN OBJEK K3</h3>
+                    <p>Pemeriksaan dan Pengujian Objek K3</p>
+                    <a class="btn btn-sm btn-primary rounded" href="https://temank3.kemnaker.go.id/page/sub_pemeriksaan">Kunjungi Layanan</a>
+                </div>
+            </div>
+        <div class="col-md-3 col-sm-6  wow zoomIn" data-wow-delay="0.3s">
+                <div class="box">
+                   <a href="https://temank3.kemnaker.go.id/page/sub_laporan"> <i class="fa fa-book"></i></a>
+                    <h4 class="mb-3">e-PELAPORAN K3</h3>
+                    <p>Form elektronik Pelaporan k3
+</p>
+                    <a class="btn btn-sm btn-primary rounded" href="https://temank3.kemnaker.go.id/page/sub_laporan">Kunjungi Layanan</a>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    </div>
+    
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+	 $("#modalPopup").modal('show');
+	});
+</script>
+<style>
+    .card-img-overlay {
+        top: .0.5%;
+        text-align: right;
+    }
+</style>
+
+<div class="modal fade" id="modalPopup" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+          <div class="text-center">
+          <img src="https://temank3.kemnaker.go.id/public/themes/website/asset/img/logoNAKER.png" alt="Pengumuman" class="img-fluid" >
+          </div>
+       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       
+         
+             <div class="alert alert-primary" role="alert">
+            DOWNLOAD APLIKASI TEMANK3 :<br> 
+            <span>Buka Play Store: Akses aplikasi Play Store pada perangkat Android Anda. Kemudian Di bagian atas layar, Anda akan menemukan kolom pencarian. 
+            Ketik nama aplikasi yang ingin Anda unduh, yaitu,  <span class="badge bg-dark">"Temank3"</span> dapat mendownload melalui link berikut <a href="https://play.google.com/store/apps/details?id=com.temank3mobile&hl=id" target="_blank" ><span class="badge bg-primary">Download</span></a>
+             Setelah unduhan selesai, pilih tombol "Buka" atau temukan ikon aplikasi di layar utama perangkat Anda. 
+            Sekarang, Anda dapat mulai menggunakan aplikasi <span class="badge bg-dark"> "Temank3"</span>.
+            </div>
+
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+  <!-- FOOTER -->
+
+<!--footer-->
+<footer id="footer-two">
+    
+<div class="container">
+    <center>
+               
+                    <!--<img class="img-responsive" src="https://temank3.id/asset/img/logo.png" alt="footer-logo">-->
+                    <img src="https://temank3.kemnaker.go.id/public/themes/website/asset/img/logofooter1.png" class="img-fluid" alt="Responsive image">
+                
+                <br>
+                <span class="banner-description">
+                Jl. Jenderal Gatot Subroto Kav. 51, Daerah Khusus Ibukota Jakarta 12750,Indonesia <a href="http://mbtsolution.com">.</a><br>
+
+</span>
+</center>
+<!--<div class="container">-->
+<!--    <div class="row">-->
+   
+      
+<!-- <center>-->
+<!--             <ul class="list-group list-group-horizontal">-->
+<!--                <li class="list-group-item">-->
+<!--                        <a href="#"><i class="fab fa-facebook-square"></i></a>-->
+<!--                    </li>-->
+
+<!--                    <li class="list-group-item">-->
+<!--                        <a href="#"><i class="fab fa-skype"></i></a>-->
+<!--                    </li>-->
+
+<!--                    <li class="list-group-item">-->
+<!--                        <a href="#"><i class="fab fa-linkedin"></i></a>-->
+<!--                    </li>-->
+
+<!--                    <li class="list-group-item">-->
+<!--                        <a href="#"><i class="fab fa-google-plus"></i></a>-->
+<!--                    </li>-->
+<!--                    <li class="list-group-item">-->
+<!--                        <a href="#"><i class="fab fa-twitter"></i></a>-->
+<!--                    </li>-->
+                  
+                   
+<!--        </ul>-->
+<!--        </center>-->
+      
+<!--    </div>-->
+<!-- </div>-->
+              
+              <br>
+                <center><div id="histats_counter" ></div></center><br>
+
+
+</div>
+
+    
+    <p class="copyright-text">Copyright GG &copy; 2020-<script> document.write(new Date().getFullYear()) </script>  Ditjen Binwasnaker & K3, Kemnaker R.I.
+    
+  
+
+</footer>
+<!--end footer-->
+</main>
+</div>
+
+
+    <script src="https://temank3.kemnaker.go.id/public/themes/website/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+  <link rel="stylesheet" href="https://temank3.kemnaker.go.id/public/themes/adminlte/plugins/select2/js/select2.min.js">
+<!-- SweetAlert2 -->
+<script src="https://temank3.kemnaker.go.id/public/themes/adminlte/plugins/sweetalert2/sweetalert2.min.js"></script>
+         
+         
+
+
+
+
+  </body>
+</html>
+s

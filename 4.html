@@ -1,0 +1,434 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="TemanK3">
+    <meta name="author" content="MBT Solution">
+    <meta name="generator" content="Sancode">
+      <title>ROOM</title>
+      
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+  
+        <link rel="apple-touch-icon" sizes="180x180" href="https://temank3.kemnaker.go.id/public/themes/website/asset/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://temank3.kemnaker.go.id/public/themes/website/asset/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://temank3.kemnaker.go.id/public/themes/website/asset/favicons/favicon-16x16.png">
+        <link rel="mask-icon" href="https://temank3.kemnaker.go.id/public/themes/website/asset/favicons/safari-pinned-tab.svg" color="#2b5797">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap core CSS -->
+<link href="https://temank3.kemnaker.go.id/public/themes/website/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQuery -->
+<script src="https://temank3.kemnaker.go.id/public/themes/adminlte/plugins/jquery/jquery.min.js"></script>
+ <!-- SweetAlert2 -->
+  <link rel="stylesheet" href="https://temank3.kemnaker.go.id/public/themes/adminlte/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      .page-item.active .page-link {
+            background-color: #15406a!important;
+            border-color: #15406a!important;
+        }
+        .page-link {
+            color: #15406a!important;
+        }
+        li.page-item.active > a {
+            color: #fff!important;
+        }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <style>
+.logo,
+.navbar-brand {
+  width: 170px !important;
+  height: 58px; 
+margin-bottom: 6px;
+}
+  
+.logo2,
+.navbar-brand {
+  width: 100px !important;
+  height: 53px; }
+.logo img,
+.navbar-brand img {
+  -o-object-position: left;
+     object-position: left; }
+	 .banner-description {
+    color: #fff;
+   
+	   text-align: center;
+
+}
+	 </style>
+    <!-- Custom styles for this template -->
+    <link href="https://temank3.kemnaker.go.id/public/themes/website/css/carousel.css" rel="stylesheet">
+     <link href="https://temank3.kemnaker.go.id/public/themes/website/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+<div id="temank3">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container">
+     
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+                        <a class="nav-link active" href="https://temank3.kemnaker.go.id"> <i class="fa fa-home"></i> BERANDA
+                          </a>
+                            </li>
+                            
+                         <li class="nav-item">
+                        <a class="nav-link" href="https://temank3.kemnaker.go.id/page/flowchart"> <i class="fa fa-flag"></i> FLOW CHART
+                          </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa fa-th"></i> LAYANAN</a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="https://temank3.kemnaker.go.id/portal">Pengesahan Gambar Rencana (PGR)</a></li>
+                              <li><a class="dropdown-item" href="https://temank3.kemnaker.go.id/portal">Penyelidikan Bahan (PB)</a></li>
+     						 <li><a class="dropdown-item" href="https://temank3.kemnaker.go.id/portal">Surat Keterangan K3 </a></li>
+                              <li><a class="dropdown-item" href="https://temank3.kemnaker.go.id/p2hiv" target="_blank">E-Learning P2HIV</a></li>
+                              <li><a class="dropdown-item" href="https://temank3.kemnaker.go.id/p2hiv" target="_blank">AIDS AWARD</a></li>
+                            </ul>
+                          </li>
+        
+                            <li class="nav-item">
+                        <a class="nav-link" href="https://temank3.kemnaker.go.id/page/news"> <i class="fa fa-newspaper"></i> INFO & ARTIKEL
+                          </a>
+                            </li>
+                            
+                            <li class="nav-item">
+                        <a class="nav-link" href="https://temank3.kemnaker.go.id/page/perundangan"> <i class="fa fa-book"></i> DOKUMEN K3 
+                          </a>
+                            </li>
+                            <li class="nav-item">
+                        <a class="nav-link" href="https://temank3.kemnaker.go.id/page/kontak"> <i class="fa fa-user"></i> HUBUNGI KAMI
+                          </a>
+                            </li>
+                            
+                    <li>
+                        <a  class="nav-link" href="https://temank3.kemnaker.go.id/login"> <i class="fa fa-sign-in"></i> LOGIN
+                          </a>
+                            </li>
+                            
+        
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main><br>
+<br><br>
+<br><br>
+<br>
+<link href="https://temank3.kemnaker.go.id/public/themes/website/asset/css/media.css" rel="stylesheet">
+<style>
+  ul.a {
+    list-style-image: url('https://temank3.kemnaker.go.id/public/images/li.png');
+    list-style-position: outside;
+  }
+
+  .accordion-header button:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f02d";
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    font-weight: 900;
+    padding: 10px;
+    color: #fff;
+    background-color: #15406a;
+  }
+
+  .accordion-button {
+    background: #e7f1ff;
+  }
+
+  .accordion-body {
+    background: #fff;
+  }
+
+  #instrument.collapsing {
+    max-height: 200px;
+  }
+</style>
+<div class="inner-body ">
+  <div class="container content-media">
+
+    <div class="row">
+      <div class="col-md-8 col-sm-12 mb-3">
+        <div class="col-md-12" style="padding-top:10px;">
+          <div class="widget">
+            <h3> Jenis Peraturan</h3>
+          </div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+                          <div class="accordion-item ">
+                <div class="float-none">
+                  <h2 class="panel-title ms-1 accordion-header" id="flush-heading1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                      pengenalan apa itu BIM                   </button>
+                  </h2>
+                </div>
+                <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul class="a">
+
+
+                                              <li><a href="5.HTML"> MATERI 1</a>
+                        </li>
+
+                         
+                                          </ul>
+                  </div>
+                </div>
+              </div>
+                          <div class="accordion-item ">
+                <div class="float-none">
+                  <h2 class="panel-title ms-1 accordion-header" id="flush-heading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                      Norma,Standar, Pedoman, Kriteria (NSPK) K3 terkait Bidang SMK3                    </button>
+                  </h2>
+                </div>
+                <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul class="a">
+
+
+                                              <li><a href="https://temank3.kemnaker.go.id/page/perundangan_detail/67/b7181a88f8991742c28bd0441e65ba87"> Peraturan Menteri Tenaga Kerja dan Transmigrasi No. Per. 01/Men/2007 Tentang Pedoman Pemberian Penghargaan K3</a>
+                        </li>
+
+                         
+
+                                          </ul>
+                  </div>
+                </div>
+              </div>
+                          <div class="accordion-item ">
+                <div class="float-none">
+                  <h2 class="panel-title ms-1 accordion-header" id="flush-heading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                      Norma,Standar, Pedoman, Kriteria (NSPK) K3 terkait Bidang Keahlian dan Kelembagaan K3                    </button>
+                  </h2>
+                </div>
+                <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul class="a">
+
+
+                                              <li><a href="https://temank3.kemnaker.go.id/page/perundangan_detail/51/a218806a67e92cee1239202623e22e05"> Peraturan Menteri Tenaga Kerja dan Transmigrasi No. Per. 04/Men/1987 Tentang Panitia Pembina Keselamatan dan Kesehatan Kerja dan Penunjukan Ahli Kesel</a>
+                        </li>
+
+
+                                          </ul>
+                  </div>
+                </div>
+              </div>
+                          <div class="accordion-item ">
+                <div class="float-none">
+                  <h2 class="panel-title ms-1 accordion-header" id="flush-heading4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                      Norma,Standar, Pedoman, Kriteria (NSPK) K3 terkait Bidang Uap                    </button>
+                  </h2>
+                </div>
+                <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul class="a">
+
+
+                                              <li><a href="https://temank3.kemnaker.go.id/page/perundangan_detail/83/91f9aae9984ccd018d45a511fdea1f2d"> Checklist Pemeriksaan Pesawat Uap</a>
+                        </li>
+
+                        
+                                          </ul>
+                  </div>
+                </div>
+              </div>
+                          <div class="accordion-item ">
+                <div class="float-none">
+                  <h2 class="panel-title ms-1 accordion-header" id="flush-heading5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                      Norma,Standar, Pedoman, Kriteria (NSPK) K3 terkait Bidang Bejana Tekanan dan Tangki Timbun                    </button>
+                  </h2>
+                </div>
+                <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul class="a">
+
+
+                                              <li><a href="https://temank3.kemnaker.go.id/page/perundangan_detail/20/dbc6190b4f58b7ef096c01a0b695a480"> Peraturan Menteri Tenaga Kerja Nomor Per-01/MEN/1992 tentang Syarat-Syarat Keselamatan dan Kesehatan Kerja Pesawat Karbid</a>
+                        </li>
+
+                                     
+
+                                          </ul>
+                  </div>
+                </div>
+              </div>
+                          <div class="accordion-item ">
+                <div class="float-none">
+                  <h2 class="panel-title ms-1 accordion-header" id="flush-heading6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+                      Norma, Standar, Pedoman, Kriteria (NSPK) K3 terkait Bidang Pesawat Angkat dan Pesawat Angkut                    </button>
+                  </h2>
+                </div>
+                <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul class="a">
+
+
+                                              <li><a href="https://temank3.kemnaker.go.id/page/perundangan_detail/37/8e11b4f66f38ad0ba03459fe28fccc73"> Lampiran Peraturan Menteri Ketenagakerjaan Tentang Keselamatan dan Kesehatan Kerja No. 8 Tahun 2020 Tentang  Pesawat Angkat dan Pesawat Angkut</a>
+                        </li>
+
+                                              <
+
+                                          </ul>
+                  </div>
+                </div>
+              </div>
+                          <div class="accordion-item ">
+                <div class="float-none">
+                  <h2 class="panel-title ms-1 accordion-header" id="flush-heading7">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+                      Norma,Standar, Pedoman, Kriteria (NSPK) K3 terkait bidang Pesawat Tenaga dan Produksi                    </button>
+                  </h2>
+                </div>
+                <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul class="a">
+
+
+                                              <li><a href="https://temank3.kemnaker.go.id/page/perundangan_detail/6/e79f0bf3ed54c46e5114a00128b409d9"> Peraturan Menteri Ketenagakerjaan RI Nomor 38 Tahun 2016 tentang Keselamatan dan Kesehatan Kerja Pesawat Tenaga dan Produksi</a>
+                        </li>
+
+                                          </ul>
+                  </div>
+                </div>
+              </div>
+                          <div class="accordion-item ">
+                <div class="float-none">
+                  <h2 class="panel-title ms-1 accordion-header" id="flush-heading8">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">
+                      Norma,Standar, Pedoman, Kriteria (NSPK) K3 terkait bidang Konstruksi dan Bangunan                    </button>
+                  </h2>
+                </div>
+                <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-heading8" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <ul class="a">
+
+
+                                              <li><a href="https://temank3.kemnaker.go.id/page/perundangan_detail/74/907e0c41cc48103218c8d56d86f9249a"> Sertifikasi Kompetensi K3 Bidang Konstruksi Bangunan</a>
+                        </li>
+
+                          
+
+                                          </ul>
+                  </div>
+                </div>
+              </div>
+                       
+                </div>
+              </div>
+                      </div>
+
+
+        </div>
+      </div>
+      
+      <!-- end col-3-->
+    </div>
+  </div>
+</div>
+
+  <!-- FOOTER -->
+
+<!--footer-->
+<footer id="footer-two">
+    
+<div class="container">
+    <center>
+               
+                    <!--<img class="img-responsive" src="https://temank3.id/asset/img/logo.png" alt="footer-logo">-->
+                 
+</center>
+<!--<div class="container">-->
+<!--    <div class="row">-->
+   
+      
+<!-- <center>-->
+<!--             <ul class="list-group list-group-horizontal">-->
+<!--                <li class="list-group-item">-->
+<!--                        <a href="#"><i class="fab fa-facebook-square"></i></a>-->
+<!--                    </li>-->
+
+<!--                    <li class="list-group-item">-->
+<!--                        <a href="#"><i class="fab fa-skype"></i></a>-->
+<!--                    </li>-->
+
+<!--                    <li class="list-group-item">-->
+<!--                        <a href="#"><i class="fab fa-linkedin"></i></a>-->
+<!--                    </li>-->
+
+<!--                    <li class="list-group-item">-->
+<!--                        <a href="#"><i class="fab fa-google-plus"></i></a>-->
+<!--                    </li>-->
+<!--                    <li class="list-group-item">-->
+<!--                        <a href="#"><i class="fab fa-twitter"></i></a>-->
+<!--                    </li>-->
+                  
+                   
+<!--        </ul>-->
+<!--        </center>-->
+      
+<!--    </div>-->
+<!-- </div>-->
+              
+              <br>
+                <center><div id="histats_counter" ></div></center><br>
+
+
+</div>
+
+    
+    <p class="copyright-text">Copyright GG &copy; 2020-<script> document.write(new Date().getFullYear()) </script>  Ditjen Binwasnaker & K3, Kemnaker R.I.
+    
+  
+
+</footer>
+<!--end footer-->
+</main>
+</div>
+
+
+    <script src="https://temank3.kemnaker.go.id/public/themes/website/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+  <link rel="stylesheet" href="https://temank3.kemnaker.go.id/public/themes/adminlte/plugins/select2/js/select2.min.js">
+<!-- SweetAlert2 -->
+<script src="https://temank3.kemnaker.go.id/public/themes/adminlte/plugins/sweetalert2/sweetalert2.min.js"></script>
+         
+         
+
+
+
+
+  </body>
+</html>
